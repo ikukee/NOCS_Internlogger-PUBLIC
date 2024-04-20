@@ -3,7 +3,7 @@
 
 NOCS AMS is an Attendance Monitoring System. It aims to provide a seamless attendance monitoring system, and virtualized recording of attendance as an alternative and cost-efficient system.
 
-NOTE: Files/Contents in this repository are for public viewing only, to prevent potential risk of unethical use of the system, the authors intentionally tailored most codes and important functionalities, variables, etc. For PUBLIC view only.
+NOTE: Files/Contents in this repository are for public viewing only, to prevent potential risk of unethical use of the system, the authors intentionally tailored most codes and important functionalities, variables, etc. For PUBLIC view only to protect the organization.
 
 ## Authors
 - [@iKukee](https://www.github.com/ikukee)
