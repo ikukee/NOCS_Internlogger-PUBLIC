@@ -1,0 +1,217 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
+/* layout */
+:root {
+  --nav-height: 5rem;
+  --primary: rgba(2, 0, 36, 1);
+  --secondary: rgba(23, 78, 166, 1);
+  --error: #e7195a;
+  --info: #5348e7;
+  --size-base: 1rem;
+  --size-md: 2rem;
+
+  --clr-accent-dark: rgb(1, 4, 9);
+  --clr-accent-light: rgb(13, 17, 23);
+  --clr-text: rgb(230, 237, 243);
+  --clr-slate: #30363d;
+  --clr-slate-2: #55595f;
+  --clr-attendance-green: rgb(57, 211, 83);
+}
+
+* {
+  box-sizing: border-box;
+  /* outline:1px dashed red; */
+}
+
+p,
+a,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--clr-accent-light);
+  margin: 0;
+  font-family: "Author", sans-serif;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1400px;
+  height: calc(100vh - var(--nav-height));
+  margin-inline: auto;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+.btn-edit {
+  background: var(--error);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1px;
+}
+
+label {
+  margin-block: 0.5rem;
+}
+
+.error_code {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+ALL THINGS RELATED TO BUTTON */
+
+.btn-time-out,
+.btn-time-in {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background: black;
+  border: 0;
+  color: var(--clr-text);
+  padding-block: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+/* USE THIS IN JAVASCRIPT TO ANIMATE */
+
+.blink-g {
+  animation: border-blink-g 2s ease infinite;
+}
+
+.blink-r {
+  animation: border-blink-r 5s ease infinite;
+}
+
+.btn-time-out:active,
+.btn-time-in:active {
+  scale: 0.9;
+}
+
+.time_icon {
+  transition: all 1s ease;
+  height: 1rem;
+  width: 1rem;
+}
+
+.btn-time-in:hover {
+  filter: grayscale(0);
+  background-color: #19bc8b;
+
+  .time_icon {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-time-out:hover {
+  filter: grayscale(0);
+  background-color: #e7195a;
+
+  .time_icon {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-logout {
+  background: var(--clr-slate);
+  border: 0;
+  padding: .5rem;
+  color: var(--clr-text);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 6rem;
+  height: 2.5rem;
+  
+  
+}
+
+.btn-logout:hover {
+  background: var(--error);
+  border: 0;
+  padding: .5rem;
+  color: var(--clr-accent-dark);
+  cursor: pointer;
+  font-size: 1rem;
+  
+}
+
+
+.dl_pdf {
+  border: none !important;
+}
+
+.dl_pdf:hover {
+  background-color: gray !important;
+}
+
+@keyframes border-blink-g {
+  0%,
+  100% {
+  }
+  50% {
+    scale: 0.975;
+    filter: grayscale(0);
+    -webkit-box-shadow: inset 0px 3px 76px 14px rgba(25, 188, 139, 1);
+    -moz-box-shadow: inset 0px 3px 76px 14px rgba(25, 188, 139, 1);
+    box-shadow: inset 0px 3px 76px 14px rgba(25, 188, 139, 1);
+  }
+}
+
+@keyframes border-blink-r {
+  0%,
+  100% {
+  }
+  50% {
+    scale: 0.975;
+    filter: grayscale(0);
+    -webkit-box-shadow: inset 0px 3px 76px 14px rgba(231, 25, 90, 1);
+    -moz-box-shadow: inset 0px 3px 76px 14px rgba(231, 25, 90, 1);
+    box-shadow: inset 0px 3px 76px 14px rgba(231, 25, 90, 1);
+  }
+}

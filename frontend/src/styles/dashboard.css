@@ -1,0 +1,214 @@
+.attendance-list {
+  color: var(--clr-text);
+}
+
+.attendance_wrapper {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  color: var(--clr-text);
+  margin: 0;
+  padding: 1rem;
+  gap: 1rem; 
+}
+
+.attendance_wrapper > * {
+  padding: 1.5rem;
+  height: 100%;
+  border: 2px solid rgba(230, 237, 243, 0.5);
+  border-radius: 1rem;
+}
+
+.progress {
+  max-height: 31rem;
+  flex: 1;
+}
+
+.main_dashboard {
+  width: 100%;
+  max-height: 30rem;
+  flex: 2.2;
+  overflow: hidden;
+}
+
+.greetings_wrapper {
+  margin-bottom: 2rem;
+}
+
+.progress_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5rem;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(23, 78, 166, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: default;
+  transition: all 0.3s;
+}
+
+.progress_card:hover {
+  scale: 1.05;
+}
+
+.progress_samerow {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.progress_samerow > * {
+  flex: 1;
+}
+
+.details_wrapper h3 {
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.card_title {
+  font-weight: 600;
+}
+
+.action_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-block: 1.5rem;
+}
+
+.announcement_area {
+  margin-bottom: 2rem;
+}
+
+.announcement_title {
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.announcement_box {
+  border: 2px solid rgba(230, 237, 243, 0.1);
+  height: 5rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.attendance_wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 30rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  display: flex;
+}
+
+tr > * {
+  flex: 1;
+}
+
+th {
+  border: none;
+}
+
+.tr_comp {
+  display: none;
+}
+
+.progress_header {
+  display: flex;
+}
+
+.progress_header > * {
+  /* border: 1px solid red; */
+  flex: 1;
+}
+
+.pfp_wrapper {
+  /* display: flex;
+  justify-content: flex-end; */
+}
+.pfp {
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--secondary);
+  content: "";
+  border-radius: 50%;
+}
+
+.remain_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.remain_wrapper_1 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  flex: 1;
+}
+
+.remain_wrapper_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.remain_wrapper_2 > *:first-child {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 500px) {
+  .attendance_wrapper {
+    flex-direction: column;
+    height: auto;
+    min-height: unset;
+  }
+
+  .main_dashboard {
+    flex: unset;
+    max-height: unset;
+  }
+
+  .progress {
+    max-height: unset;
+    flex: unset;
+    margin-bottom: 1rem;
+  }
+
+  .remain_wrapper {
+    flex-direction: column;
+  }
+
+  .remain_wrapper_2 {
+    border-left: none;
+    margin-top: 1rem;
+  }
+}

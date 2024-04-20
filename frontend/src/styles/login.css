@@ -1,0 +1,274 @@
+.login {
+  max-width: 22rem;
+  min-width: 22rem;
+  margin: auto auto;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  background: rgb(22, 27, 34);
+  border-radius: 5px;
+  color: var(--clr-text);
+  border: 2px solid rgba(230, 237, 243, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.form_header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.form_header > * {
+  margin: 0;
+}
+
+.login-button {
+  margin-block: 1rem;
+  transition: all 0.3s;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+}
+
+.signup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.signup {
+  color: #fff;
+}
+
+.login_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - var(--nav-height));
+  position: relative;
+}
+
+.login_wrapper > * {
+  flex: 1;
+  width: 100vw;
+}
+
+.login_form_wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.login_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nocs_logo {
+  height: 30rem;
+  width: 30rem;
+}
+
+/* SIGNUP */
+
+.signup_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.signup_form_wrapper {
+  width: 50rem;
+}
+
+.same_row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.name_email > * {
+  flex: 1;
+}
+
+.test1 {
+  flex-direction: column;
+}
+
+.select_course {
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nocs_logo path:nth-child(1) {
+  stroke-dasharray: 600px;
+  stroke-dashoffset: 600px;
+  transform: translateX(-50px);
+  animation: slide-h 1s ease forwards, line-anim 1s ease forwards 1.5s;
+  /* animation: line-anim 2s ease forwards; */
+}
+.nocs_logo path:nth-child(3) {
+  stroke-dasharray: 600px;
+  stroke-dashoffset: -600px;
+  transform: translateY(-50px);
+  animation: slide-v 1s ease forwards 0.1s, line-anim 1s ease forwards 1.5s;
+  /* animation: line-anim 2s ease forwards; */
+}
+
+.nocs_logo path:nth-child(5) {
+  stroke-dasharray: 600px;
+  stroke-dashoffset: 600px;
+  transform: translateY(50px);
+  animation: slide-h 1s ease forwards 0.2s, line-anim 1s ease forwards 1.5s;
+  /* animation: line-anim 2s ease forwards; */
+}
+
+.nocs_logo path:nth-child(7) {
+  stroke-dasharray: 600px;
+  stroke-dashoffset: -600px;
+  transform: translateX(50px);
+  animation: slide-h 1s ease forwards 0.3s, line-anim 1s ease forwards 1.5s;
+  /* animation: line-anim 2s ease forwards; */
+}
+
+.path_n {
+  opacity: 0;
+  animation: pop 0.3s linear forwards 2s;
+}
+.path_o {
+  opacity: 0;
+  animation: pop 0.3s linear forwards 2.1s;
+}
+
+.path_c {
+  opacity: 0;
+  animation: pop 0.3s linear forwards 2.2s;
+}
+
+.path_s {
+  opacity: 0;
+  animation: pop 0.3s linear forwards 2.3s;
+}
+
+.nocs_logo > rect {
+  opacity: 0;
+  animation: pop 0.3s ease-in-out forwards 3s;
+}
+
+.splash_screen{
+  display: none;
+}
+
+@keyframes slide-h {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-v {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+}
+
+@keyframes fillop {
+  to {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .login_wrapper{
+    position: absolute;
+  }
+  
+  .login_logo{
+    position: absolute;
+    top: calc(-35vh + var(--nav-height));
+    width: 125%;
+    height: 110vh;
+    z-index: 2;
+    scale: 0.8;
+    background: var(--clr-accent-light);
+    animation: showSplash 4s normal;
+    opacity: 0;
+    z-index: -1;
+    
+  }
+  .login_form_wrapper{
+    display: flex;
+    justify-content: center;
+    animation: hideForm 4s normal;
+  }
+
+  .login{
+    background: none;
+    border: none;
+    margin: 0;
+  }
+
+  .login-button{
+    border: 0.1rem solid #fff;
+  }
+
+  /* Splash Screen */
+  @keyframes hideNav {
+    100% {
+      position: absolute;
+    }
+  }
+  @keyframes hideForm {
+    0%{
+      display: none;}
+    99%{
+      display: none;
+    }
+    100%{
+      display: flex;
+    }
+  }
+  @keyframes showSplash {
+
+    0%{
+      z-index: 2;
+      opacity: 1;
+    }
+    100%{
+      z-index: 2;
+      opacity: 1;
+    }
+  }
+}

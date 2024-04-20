@@ -1,0 +1,133 @@
+.attendance-all-wrapper {
+  width: 50%;
+  color: var(--clr-text);
+  padding: 1rem;
+}
+.attendance-all-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block: 2rem;
+}
+
+.attendance-all-header > * {
+  margin: 0;
+  padding: 0;
+}
+
+.attendance-overview {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  position: rel;
+}
+
+.grid-wrapper {
+  width: 100%;
+  margin-bottom: 1rem;
+  height: auto;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 10px;
+  padding-bottom: 0.3rem;
+}
+
+/* For WebKit browsers like Chrome and Safari */
+.grid-wrapper::-webkit-scrollbar {
+  width: 6px; /* Adjust the scrollbar width */
+  height: 10px;
+  cursor: pointer;
+}
+
+.grid-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Adjust the scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.grid-wrapper::-webkit-scrollbar-track {
+  background-color: none; /* Adjust the scrollbar track color */
+}
+
+.grid-item {
+  height: auto;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  border: 1px solid var(--clr-slate-2);
+  /* aspect-ratio: 1/1; */
+  padding: 0.5rem;
+  overflow: hidden;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.grid-item:hover {
+  border: 1px solid #fff;
+}
+
+/* .grid-item:hover {
+  scale: 2;
+  background-color: rgb(13, 17, 23);
+} */
+
+.attendance-container {
+  /* border: 1px dashed gray; */
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: contain;
+  gap: 2px;
+}
+
+.attendance-box {
+  height: 10px;
+  width: 10px;
+  background-color: var(--clr-slate);
+  border-radius: 2px;
+}
+
+.ab-present {
+  background-color: var(--clr-attendance-green);
+}
+
+
+.attendance-all-wrapper .account-panel > * {
+  display: flex;
+  gap:.5rem;
+  
+}
+.attendance-all-wrapper .account-panel > * > * {
+  border-top:3px solid grey;
+  
+  border-bottom: 3px solid grey;
+}
+.account-panel .dl_pdf{
+  margin: .5rem;
+  display: inline-flex;
+  
+}
+.attendance-all-wrapper .display-form{
+  border-top: 2px solid silver;
+  margin-top: 1.5rem;
+  position: fixed;
+  background-color: var(--secondary);
+
+}
+.attendance-all-wrapper .display-form > * {
+  display: inline-flex;
+  gap: .5rem;
+  padding: .5rem;
+  
+}

@@ -1,0 +1,39 @@
+.set_hours_wrapper{
+    margin: auto;
+}
+.form_content{
+    padding: 10px;
+    
+}
+.set_hours_form{
+    border:2px solid white;
+    padding: 5px;
+    width: 28rem;
+    height: 15rem;
+    color: var(--clr-text);
+
+}
+.set_hours_form .row{
+    margin: auto;
+    width: 18rem;
+}
+.set_hours_form .row .col{
+    display: inline-block;   
+}
+.set_hours_form button{
+    margin: auto;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background: black;
+    border: 0;
+    color: var(--clr-text);
+    padding-block: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    filter: grayscale(1);
+    border: none;
+    overflow: hidden;
+    font-weight: 600;
+}

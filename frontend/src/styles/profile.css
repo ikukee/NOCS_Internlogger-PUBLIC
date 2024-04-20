@@ -1,0 +1,19 @@
+.profile_wrapper {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  color: var(--clr-text);
+  margin: 0;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.profile_wrapper > * {
+  padding: 1.5rem;
+  border: 2px solid rgba(230, 237, 243, 0.5);
+  border-radius: 1rem;
+}
+
+.profile_info > * {
+  padding: 0.5rem;
+}

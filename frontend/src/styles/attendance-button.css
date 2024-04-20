@@ -1,0 +1,55 @@
+.attendance_button_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.time_in_wrapper {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.time_in_wrapper > * {
+  flex: 1;
+}
+
+.view_all_attendance_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.btn_view_all {
+  padding: 0.5rem;
+  background-color: var(--primary);
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ann_time > *:nth-child(1) {
+  flex: 2;
+}
+
+.ann_time > *:nth-child(2) {
+  flex: 1;
+}
+
+.time_wrapper {
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clock {
+  margin: 0 fonts;
+}

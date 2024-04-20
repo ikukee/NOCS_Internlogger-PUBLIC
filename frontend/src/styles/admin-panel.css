@@ -1,0 +1,77 @@
+
+.admin-panel-wrapper {
+  color: var(--clr-text);
+  padding: 2rem;
+}
+
+.intern-lists{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem ;
+  justify-content: center;
+}
+
+.intern-lists a{
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+.intern-card{
+  border: 0.1rem solid var(--secondary);
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.intern-card > * {
+  padding-inline: 1rem;
+}
+
+.intern-card h3 {
+  background: var(--secondary);
+  text-align: center;
+  padding-block: 0.5rem;
+}
+
+.intern-card:hover {
+  background-color: var(--clr-slate);
+  border: 0.1rem solid rgb(0, 212, 255);
+}
+
+.intern-card:hover h3 {
+  background-color: rgb(0, 212, 255);
+  text-shadow: 0px 0px 0.2rem var(--secondary);
+}
+.search-box{
+  min-width: 44rem;
+  max-width: 50rem;
+  padding-block: .5rem;
+  z-index: 1;
+}
+.search-box > *{
+  display: flex;
+  margin-block: .5rem;
+}
+.search-box button{
+  background: grey;
+  border: none;
+  padding: .5rem;
+  border-radius: 5px;
+  justify-content: right;
+}
+.adm_login{
+  max-width: 30rem;
+  min-width: 30rem;
+  margin: auto auto;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  background: rgb(22, 27, 34);
+  border-radius: 5px;
+  color: var(--clr-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}

@@ -1,0 +1,170 @@
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(23, 78, 166, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  height: var(--nav-height);
+  margin: 0;
+  border-bottom: 2px solid rgba(230, 237, 243, 0.5);
+}
+
+.nav > * {
+  flex: 1;
+}
+
+.nav > *:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  color: var(--clr-text);
+  width: 5rem;
+}
+.nav > *:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  color: var(--clr-text);
+  width: 5rem;
+}
+
+.nav_logo {
+  height: 5rem;
+  width: 5rem;
+  transition: all 0.3s ease;
+}
+
+.nav > *:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  color: var(--clr-text);
+  width: 5rem;
+}
+
+.nocs_text {
+  font-size: var(--size-md);
+  font-weight: 600;
+  margin-block: -5px;
+  transition: all 0.3s;
+}
+
+.nocs_sub {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+.nav_logo path {
+  transition: all 1s ease;
+}
+
+.home:hover {
+  .nav_logo path {
+    fill: #fff;
+  }
+
+  .nav_logo {
+    scale: 1.05;
+  }
+
+  .nav_logo .logo_letter {
+    fill: black;
+  }
+}
+
+.home > * {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome_greetings {
+  margin: 0;
+  padding: 0;
+}
+
+.date_today {
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.nav_link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav_link ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 3rem;
+  list-style: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_link ul li > * {
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+.nav_link ul li {
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+}
+
+.ind-navlink {
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.nav_link ul li:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-color: #fff;
+  .ind-navlink {
+    color: black;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav > *:nth-child(1) {
+    display: none;
+  }
+
+
+  .nav_link ul {
+    display: flex;
+    gap: 1.5rem;
+    
+  }
+
+  .nav_link ul li {
+    padding-inline: 0.5rem;
+    padding-block: 0.25rem;
+  }
+}
